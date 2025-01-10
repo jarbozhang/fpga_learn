@@ -36,22 +36,29 @@ module htd #(
   always @(posedge i_clk or negedge i_rst_n) begin
     case (st_current)
         IDLE_S: begin
+            // 开始拍
             if (i_data_wr && !i_data_wr_reg) begin
                 st_current <= TRANS_FIRST_S;
             end else
                 st_current <= IDLE_S;
         end
         TRANS_FIRST_S: begin
-            if (i_data_wr_reg && !o_data_wr_reg) begin
+            st_current <= TRANS_S;
+            // 开始拍，打一拍开始加标志位
+            ov_data_reg <= {1'b1, iv_data_reg};
+            
+        end
+        TRANS_S: begin
+            // 结束拍
+            if (i_data_wr_reg && !i_data_wr) begin
                 ov_data_reg <= {1'b1, iv_data_reg};
-            end else if(!i_data_wr && i_data_wr_reg) begin
-                ov_data_reg <= {1'b1, iv_data_reg};
-                st_current <= TRANS_S;
-            end else begin
+                st_current <= IDLE_S;
+            // 中间拍
+            end  else begin
                 ov_data_reg <= {1'b0, iv_data_reg};
             end
         end
-        TRANS_S: begin
+        default: begin
             st_current <= IDLE_S;
         end
     endcase
