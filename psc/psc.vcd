@@ -1,0 +1,463 @@
+$date
+	Mon Jan 13 15:36:35 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_psc $end
+$var wire 9 ! ov_data [8:0] $end
+$var wire 1 " o_data_wr $end
+$var parameter 32 # CLK_PERIOD $end
+$var reg 1 $ i_clk $end
+$var reg 1 % i_data_wr $end
+$var reg 1 & i_rst_n $end
+$var reg 8 ' iv_data [7:0] $end
+$scope module u_psc $end
+$var wire 1 $ i_clk $end
+$var wire 1 % i_data_wr $end
+$var wire 1 & i_rst_n $end
+$var wire 8 ( iv_data [7:0] $end
+$var wire 8 ) wv_data_dly2htd [7:0] $end
+$var wire 1 * w_wr_dly2htd $end
+$var wire 9 + ov_data [8:0] $end
+$var wire 1 " o_data_wr $end
+$scope module u_dly $end
+$var wire 1 $ i_clk $end
+$var wire 1 % i_data_wr $end
+$var wire 1 & i_rst_n $end
+$var wire 8 , iv_data [7:0] $end
+$var wire 1 * o_data_wr $end
+$var wire 8 - ov_data [7:0] $end
+$var reg 1 . o_data_wr_reg $end
+$var reg 1 / o_data_wr_reg2 $end
+$var reg 8 0 ov_reg1 [7:0] $end
+$var reg 8 1 ov_reg2 [7:0] $end
+$upscope $end
+$scope module u_htd $end
+$var wire 1 $ i_clk $end
+$var wire 1 * i_data_wr $end
+$var wire 1 & i_rst_n $end
+$var wire 8 2 iv_data [7:0] $end
+$var wire 1 " o_data_wr $end
+$var wire 9 3 ov_data [8:0] $end
+$var parameter 32 4 DATA_WIDTH $end
+$var parameter 2 5 IDLE_S $end
+$var parameter 2 6 TRANS_FIRST_S $end
+$var parameter 2 7 TRANS_S $end
+$var reg 1 8 i_data_wr_reg $end
+$var reg 8 9 iv_data_reg [7:0] $end
+$var reg 1 : o_data_wr_reg $end
+$var reg 9 ; ov_data_reg [8:0] $end
+$var reg 2 < st_current [1:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 7
+b1 6
+b0 5
+b1000 4
+b1010 #
+$end
+#0
+$dumpvars
+b0 <
+b0 ;
+0:
+b0 9
+08
+b0 3
+b0 2
+b0 1
+b0 0
+0/
+0.
+b0 -
+b0 ,
+b0 +
+0*
+b0 )
+b0 (
+b0 '
+0&
+0%
+1$
+0"
+b0 !
+$end
+#5000
+0$
+#10000
+1$
+#15000
+0$
+#20000
+1$
+#25000
+0$
+#30000
+1$
+#35000
+0$
+#40000
+1$
+#45000
+0$
+#50000
+1$
+#55000
+0$
+#60000
+1$
+#65000
+0$
+#70000
+1$
+#75000
+0$
+#80000
+1$
+#85000
+0$
+#90000
+1$
+#95000
+0$
+#100000
+1&
+1$
+#105000
+0$
+#110000
+1$
+#115000
+0$
+#120000
+1%
+b1 '
+b1 (
+b1 ,
+1$
+#125000
+0$
+#130000
+1.
+b1 0
+b10 '
+b10 (
+b10 ,
+1$
+#135000
+0$
+#140000
+1*
+1/
+b1 )
+b1 -
+b1 2
+b1 1
+b10 0
+b11 '
+b11 (
+b11 ,
+1$
+#145000
+0$
+#150000
+b10 )
+b10 -
+b10 2
+b10 1
+b11 0
+18
+b1 9
+b1 <
+b100 '
+b100 (
+b100 ,
+1$
+#155000
+0$
+#160000
+b100000001 !
+b100000001 +
+b100000001 3
+b100000001 ;
+b10 <
+1"
+1:
+b10 9
+b11 )
+b11 -
+b11 2
+b11 1
+b100 0
+b101 '
+b101 (
+b101 ,
+1$
+#165000
+0$
+#170000
+b100 )
+b100 -
+b100 2
+b100 1
+b101 0
+b11 9
+b10 !
+b10 +
+b10 3
+b10 ;
+b110 '
+b110 (
+b110 ,
+1$
+#175000
+0$
+#180000
+b11 !
+b11 +
+b11 3
+b11 ;
+b100 9
+b101 )
+b101 -
+b101 2
+b101 1
+b110 0
+0%
+1$
+#185000
+0$
+#190000
+0.
+b110 )
+b110 -
+b110 2
+b110 1
+b101 9
+b100 !
+b100 +
+b100 3
+b100 ;
+1%
+b111 '
+b111 (
+b111 ,
+1$
+#195000
+0$
+#200000
+b101 !
+b101 +
+b101 3
+b101 ;
+b110 9
+0*
+0/
+1.
+b111 0
+b1000 '
+b1000 (
+b1000 ,
+1$
+#205000
+0$
+#210000
+1*
+1/
+b111 )
+b111 -
+b111 2
+b111 1
+b1000 0
+08
+b0 <
+b100000110 !
+b100000110 +
+b100000110 3
+b100000110 ;
+b1001 '
+b1001 (
+b1001 ,
+1$
+#215000
+0$
+#220000
+b1 <
+0"
+0:
+18
+b111 9
+b1000 )
+b1000 -
+b1000 2
+b1000 1
+b1001 0
+b1010 '
+b1010 (
+b1010 ,
+1$
+#225000
+0$
+#230000
+b1001 )
+b1001 -
+b1001 2
+b1001 1
+b1010 0
+1"
+1:
+b1000 9
+b100000111 !
+b100000111 +
+b100000111 3
+b100000111 ;
+b10 <
+b1011 '
+b1011 (
+b1011 ,
+1$
+#235000
+0$
+#240000
+b1000 !
+b1000 +
+b1000 3
+b1000 ;
+b1001 9
+b1010 )
+b1010 -
+b1010 2
+b1010 1
+b1011 0
+b1100 '
+b1100 (
+b1100 ,
+1$
+#245000
+0$
+#250000
+b1011 )
+b1011 -
+b1011 2
+b1011 1
+b1100 0
+b1010 9
+b1001 !
+b1001 +
+b1001 3
+b1001 ;
+0%
+1$
+#255000
+0$
+#260000
+b1010 !
+b1010 +
+b1010 3
+b1010 ;
+b1011 9
+0.
+b1100 )
+b1100 -
+b1100 2
+b1100 1
+1$
+#265000
+0$
+#270000
+0*
+0/
+b1100 9
+b1011 !
+b1011 +
+b1011 3
+b1011 ;
+1$
+#275000
+0$
+#280000
+b0 <
+b100001100 !
+b100001100 +
+b100001100 3
+b100001100 ;
+08
+1$
+#285000
+0$
+#290000
+0"
+0:
+1$
+#295000
+0$
+#300000
+1$
+#305000
+0$
+#310000
+1$
+#315000
+0$
+#320000
+1$
+#325000
+0$
+#330000
+1$
+#335000
+0$
+#340000
+1$
+#345000
+0$
+#350000
+1$
+#355000
+0$
+#360000
+1$
+#365000
+0$
+#370000
+1$
+#375000
+0$
+#380000
+1$
+#385000
+0$
+#390000
+1$
+#395000
+0$
+#400000
+1$
+#405000
+0$
+#410000
+1$
+#415000
+0$
+#420000
+1$
+#425000
+0$
+#430000
+1$
+#435000
+0$
+#440000
+1$
+#445000
+0$
+#450000
+1$
